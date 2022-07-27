@@ -2,7 +2,7 @@
 
 ## About this repository
 
-> **Currecntly covering topic**: *sequential_search.py*
+> **Currecntly covering topic**: *[sequential_search.py](https://github.com/harvestzhann/Learn-DataStructures-and-Algorithms/blob/main/Algorithms/Searchings/sequential_search.py)*
 
 Repository for studying ***Data Structures*** and ***Algorithms***. There are two main folders:
 
