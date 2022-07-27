@@ -17,7 +17,6 @@ def sequential_search(arr:list, item:int) -> int:
 def main():
    arr = [3, 2, 5, 4, 1]
    item = 4
-
    print(sequential_search(arr, item))
 
 
