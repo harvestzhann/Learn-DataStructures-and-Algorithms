@@ -1,4 +1,4 @@
-def binary_search(arr:list, item:int):
+def binary_search(arr:list, item:int) -> int:
    start, end = 0, len(arr)-1 # Searching range
 
    while start <= end:
