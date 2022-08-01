@@ -1,32 +1,23 @@
-# Jump Search Algorithm
+# Binary Search with Recursion Algorithm
 
 
-import math
-
-
-def jump_search(arr: list, find: int) -> int:
-   length = len(arr)
-   jump = int(math.sqrt(length))
-   index = 0
-
-   while arr[min(jump, length-1)] < find:
-      index = jump
-      jump += int(math.sqrt(length))
-      if index >= length:
-         return -1
-   
-   while arr[index] < find:
-      index += 1
-   
-   if arr[index] == find:
-      return index
-   return -1
+def binary_search_recursion(arr: list, find: int) -> float:
+   if len(arr) > 0:
+      middle = len(arr) // 2
+      if arr[middle] == find:
+         return True
+      else:
+         if find < arr[middle]:
+            return binary_search_recursion(arr[:middle], find)
+         else:
+            return binary_search_recursion(arr[middle + 1:], find)
+   return False
 
 
 def main():
    arr: list = [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20 , 22, 24, 25, 30]
-   find: int = 30
-   print(jump_search(arr, find))
+   find: int = 1
+   print(binary_search_recursion(arr, find))
 
 
 if __name__ == '__main__':
