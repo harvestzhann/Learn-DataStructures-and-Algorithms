@@ -1,5 +1,5 @@
 def binary_search(arr: list, start: int, end: int, find: int) -> int:
-   if len(arr) > 0:
+   if start != end:
       middle = (start + end) // 2
       if arr[middle] == find:
          return middle
