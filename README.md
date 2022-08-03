@@ -2,7 +2,7 @@
 
 ## About this repository
 
-> **Currecntly covering topic**: *[exponential_search.py](https://github.com/harvestzhann/Learn-DataStructures-and-Algorithms/blob/main/Algorithms/Searchings/exponential_search.py)*
+> **Currecntly covering topic**: *[interpolation_search.py](https://github.com/harvestzhann/Learn-DataStructures-and-Algorithms/blob/main/Algorithms/Searchings/interpolation_search.py)*
 
 Repository for studying ***Data Structures*** and ***Algorithms***. There are two main folders:
 
