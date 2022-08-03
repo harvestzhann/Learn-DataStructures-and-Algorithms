@@ -2,7 +2,6 @@ def interpolation_search(arr: list, find: int) -> int:
    start, end = 0, len(arr) - 1
 
    while start <= end:
-
       if arr[start] == find:
          return start
       if arr[end] == find:

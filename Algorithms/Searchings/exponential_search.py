@@ -12,7 +12,6 @@ def binary_search(arr: list, start: int, end: int, find: int) -> int:
       return -1
 
 
-
 def exponential_search(arr: list, find: int) -> int:
    if arr[0] == find:
       return 0
