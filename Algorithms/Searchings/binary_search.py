@@ -1,17 +1,21 @@
 def binary_search(arr:list, item:int) -> int:
-   start, end = 0, len(arr)-1 # Searching range
+   # check if arr is sorted
+   if sorted(arr) == arr:
+      start, end = 0, len(arr)-1 # Searching range
 
-   while start <= end:
-      middle = (start + end) // 2 # Middle index
-      if arr[middle] == item:
-         return middle
-      else:
-         if item < arr[middle]:
-            end = middle - 1 # Move range to the left
+      while start <= end:
+         middle = (start + end) // 2 # Middle index
+         if arr[middle] == item:
+            return middle
          else:
-            start = middle + 1 # Move range to the right
+            if item < arr[middle]:
+               end = middle - 1 # Move range to the left
+            else:
+               start = middle + 1 # Move range to the right
          
-   return -1 # Not found
+      return -1 # Not found
+   
+   raise ValueError("'arr' argument must be sorted")  # arr unsorted
 
 
 def main():
